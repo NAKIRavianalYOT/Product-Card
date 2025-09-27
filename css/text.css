@@ -1,0 +1,92 @@
+.title {
+  position: relative;
+  color: #515076;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 110px;
+  font-weight: 400;
+  font-size: 70px;
+}
+
+.main-container__title>img {
+  position: absolute;
+  top: 10px;
+  top: -230px;
+  z-index: 0;
+}
+
+.medicine-card__span {
+  display: inline-block;
+  color: #a5a3b9;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.medicine-card__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 135%;
+  color: #515076;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.medicine-card__paragraph {
+  color: #515076;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 138%;
+  margin-bottom: 15px;
+}
+
+.medicine-card__list {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 138%;
+  color: #515076;
+}
+
+ul>span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+ul>li {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-bottom: 5px;
+}
+
+li:nth-child(4) {
+  margin-bottom: 25px;
+}
+
+ul>li>div {
+  width: 7px;
+  height: 7px;
+  stroke: #515076;
+  border: 1px solid #515076;
+  border-radius: 50%;
+}
+
+.medicine-card__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-price__span-1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #515076;
+}
+
+.card-price__span-2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #515076;
+}
