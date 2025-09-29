@@ -2,20 +2,19 @@
   position: relative;
   color: #515076;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 110px;
+  margin: 0 0 110px 0;
   font-weight: 400;
   font-size: 70px;
 }
 
-.main-container__title>img {
+.main-container__title > img {
   position: absolute;
   top: 10px;
   top: -230px;
   z-index: 0;
 }
 
-.medicine-card__span {
+.medicine-card__item {
   display: inline-block;
   color: #a5a3b9;
   text-transform: uppercase;
@@ -48,23 +47,21 @@
   color: #515076;
 }
 
-ul>span {
+ul > span {
   display: inline-block;
   margin-bottom: 5px;
 }
 
-ul>li {
-  display: flex;
+ul > li {
   align-items: center;
-  column-gap: 8px;
-  margin-bottom: 5px;
+  margin: 0 0 5px 13px;
 }
 
 li:nth-child(4) {
   margin-bottom: 25px;
 }
 
-ul>li>div {
+ul > li > div {
   width: 7px;
   height: 7px;
   stroke: #515076;
@@ -77,14 +74,14 @@ ul>li>div {
   justify-content: space-between;
 }
 
-.card-price__span-1 {
+.card-price__item-1 {
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
   color: #515076;
 }
 
-.card-price__span-2 {
+.card-price__item-2 {
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
