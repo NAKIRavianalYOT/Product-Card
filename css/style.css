@@ -1,0 +1,7 @@
+/* КОНТЕЙНЕРЫ */
+@import url(global/containers.css);
+
+/* КОНТЕНТ */
+@import url(content/image-stylization.css);
+@import url(content/text-styling.css);
+
