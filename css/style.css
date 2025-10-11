@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #515076FF;
+}
+
+.main {
+  background-image: url("/image/dandelions.png");
+  background-position: 395px -75px;
+  background-repeat: no-repeat;
+  background-size: initial;
+  padding-top: 220px;
+}
+
+.container {
+  max-width: 1280px;
+  min-height: 1715px;
+  margin: 0 auto;
+}
