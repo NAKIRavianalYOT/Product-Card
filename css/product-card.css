@@ -31,12 +31,8 @@
   transition: .3s .2s;
 }
 
-.backgroundPeachPuff {
+.bd-peachpuff {
   background-color: #FFDAB9;
-}
-
-.backgroundSlateGray {
-  background-color: #778899;
 }
 
 .container__product-cards {

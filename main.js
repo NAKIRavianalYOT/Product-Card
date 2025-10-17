@@ -33,8 +33,8 @@ function openGoogle() {
 
 // №04 Вывод сообщение в консоль лог
 
-const outputLogButton = document.querySelector('#open-console-log');
-outputLogButton.addEventListener('click', () => openConsoleLog('ДЗ №04'));
+const messageConsoleLog = document.querySelector('#open-message-console-log');
+messageConsoleLog.addEventListener('click', () => openConsoleLog('ДЗ №04'));
 
 function openConsoleLog(message) {
   alert(message);
@@ -43,19 +43,21 @@ function openConsoleLog(message) {
 
 // №05 Вывод названия главной заголовки в консоль лог при наведении
 
-const titleHeading = document.querySelector('#console-output-title');
-titleHeading.addEventListener('mouseover', () => {
-  console.log(`"Выбери свой продукт"`);
+const mainHeading = document.querySelector('#main-heading');
+mainHeading.addEventListener('mouseover', () => {
+  openHeadingConsoleLog('Выбери свой продукт');
 });
+
+function openHeadingConsoleLog(message) {
+  console.log(message);
+}
 
 // №06 Изменение цветов при нажатии на кнопки
 
 const colorToggleBtn = document.querySelector('#color-toggle-btn');
-
 colorToggleBtn.addEventListener('click', () => {
-  colorToggleBtn.classList.add('backgroundPeachPuff');
+toggleColorBth()});
 
-  colorToggleBtn.addEventListener('click', () => {
-    colorToggleBtn.classList.add('backgroundSlateGray');
-  });
-});
+function toggleColorBth() {
+    colorToggleBtn.classList.toggle('bd-peachpuff');
+}
