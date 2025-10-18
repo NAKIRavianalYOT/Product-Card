@@ -33,22 +33,26 @@ function openGoogle() {
 
 // №04 Вывод сообщение в консоль лог
 
-const messageConsoleLog = document.querySelector('#open-message-console-log');
-messageConsoleLog.addEventListener('click', () => openConsoleLog('ДЗ №04'));
+const outputLogBtn = document.querySelector(
+  '#output-console-log'
+)
+outputLogBtn.addEventListener('click', () =>
+  outputConsoleLogMessage('ДЗ №04')
+)
 
-function openConsoleLog(message) {
-  alert(message);
-  console.log(message);
+function outputConsoleLogMessage(message) {
+  alert(message)
+  console.log(message)
 }
 
 // №05 Вывод названия главной заголовки в консоль лог при наведении
 
-const mainHeading = document.querySelector('#main-heading');
-mainHeading.addEventListener('mouseover', () => {
-  openHeadingConsoleLog('Выбери свой продукт');
+const mainTitle = document.querySelector('#main-title');
+mainTitle.addEventListener('mouseover', () => {
+  outputConsoleLogTitle('Выбери свой продукт')
 });
 
-function openHeadingConsoleLog(message) {
+function outputConsoleLogTitle(message) {
   console.log(message);
 }
 
@@ -56,8 +60,9 @@ function openHeadingConsoleLog(message) {
 
 const colorToggleBtn = document.querySelector('#color-toggle-btn');
 colorToggleBtn.addEventListener('click', () => {
-toggleColorBth()});
+  toggleColorBtn()
+});
 
-function toggleColorBth() {
-    colorToggleBtn.classList.toggle('bd-peachpuff');
+function toggleColorBtn() {
+  colorToggleBtn.classList.toggle('bg-peachpuff');
 }
