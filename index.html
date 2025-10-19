@@ -12,8 +12,15 @@
   <main class="main">
     <div class="container">
       <heading class="home-title">
-        <h1 class="product-card__title">Выбери свой продукт</h1>
+        <h1 class="product-card__title" id="main-title">Выбери свой продукт</h1>
       </heading>
+      <div class="product-card__container-buttons">
+        <button class="button__item" id="change-color-all-card">Смена цвета всех карточек</button>
+        <button class="button__item" id="change-color-first-card">Смена цвета одной карточки</button>
+        <button class="button__item" id="open-google">Открыть домашнею страницу Google</button>
+        <button class="button__item" id="output-console-log">Вывести сообщение в консоль лог</button>
+        <button class="button__item" id="color-toggle-btn">Поменять цвет кнопки</button>
+      </div>
       <div class="container__product-cards">
         <article class="product-cards__item">
           <img src="image/diamant-serum.png" alt="Увлажняющий мусс" width="290px" height="245px">
@@ -112,5 +119,7 @@
       </div>
     </div>
   </main>
+
+<script src="main.js"></script>
 </body>
 </html>
