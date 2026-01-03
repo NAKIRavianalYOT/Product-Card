@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   color: #ffffff;
   font-size: 15px;
@@ -5,11 +12,11 @@ body {
   background-image: radial-gradient(circle, #2e274d, #195165);
 }
 
-.show-user {
+.show-container__users {
   display: flex;
 }
 
-.close-user {
+.close-container__users {
   display: none;
 }
 
@@ -37,18 +44,18 @@ body {
   text-align: center;
 }
 
-.user {
+.container-users {
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
   margin: 30px 0 30px 0;
 }
 
-.user-title {
+.users-title {
   color: #686794;
 }
 
-.user-buttons {
+.users-buttons {
   display: flex;
   column-gap: 20px;
 }

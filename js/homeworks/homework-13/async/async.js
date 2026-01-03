@@ -2,10 +2,10 @@ let users = undefined;
 
 const userCardTemp = document.getElementById('user-card-template');
 const containerData = document.getElementById('container-data');
-const user = document.getElementById('user');
+const containerUsers = document.getElementById('container-users');
 const userList = document.getElementById('user-list');
-const buttonDeleteAll = document.getElementById('button-delete-all');
-const buttonAddAll = document.getElementById('button-add-all');
+const deleteBtnAll = document.getElementById('delete-button-all');
+const addBtnAll = document.getElementById('add-button-all');
 
 const changeOfClasses = (value, add, close) => {
   value.classList.add(add);
@@ -37,7 +37,7 @@ async function initUsers() {
 const renderUsers = users => {
   userList.innerHTML = "";
   changeOfClasses(containerData, "close-data__loading", "show-data__loading");
-  changeOfClasses(user, "show-user", "close-user");
+  changeOfClasses(containerUsers, "show-container__users", "close-container__users");
   
   users.forEach(user => {
     const userClone = userCardTemp.content.cloneNode(true);
@@ -57,12 +57,12 @@ const renderUsers = users => {
   });
 }
 
-buttonDeleteAll.addEventListener("click", () => {
-  localStorage.setItem("users", JSON.stringify([]));
+deleteBtnAll.addEventListener("click", () => {
+  localStorage.removeItem("users");
   userList.innerHTML = 'Список пользователей пустой';
 });
 
-buttonAddAll.addEventListener("click", async () => {
+addBtnAll.addEventListener("click", async () => {
   const response = await fetch("./users.json");
   users = await response.json();
   const saved = localStorage.getItem("users");
