@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/async.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:itawght@100..900;100..900&display=swap">
+  <title>Async</title>
+</head>
+<body>
+  <template id="user-card-template">
+    <div id="user-card" class="user-card">
+      <div class="user-card__avatar">
+        <img class="avatar-user" width="200" height="200">
+      </div>
+      <div class="user-card__info">
+        <p class="authentication-info"></p>
+        <p class="name-info"></p>
+        <p class="surname-info"></p>
+        <p class="email-info"></p>
+        <p class="city-info"></p>
+        <p class="profession-info"></p>
+      </div>
+      <button class="button button-delete"></button>
+    </div>
+  </template>
+
+  <div class="wrapper">
+    <div id="container-data" class="container-data show-data__loading">
+      <p class="data-loading">Данные загружаются
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </p>
+    </div>
+  
+    <div id="user" class="user close-user">
+      <div id="user-title" class="user-title">
+        <h1 class="title">Список пользователей</h1>
+      </div>
+      <div id="user-buttons" class="user-buttons">
+        <button id="button-delete-all" class="button button-delete-all">Удалить всех</button>
+        <button id="button-add-all" class="button button-add-all">Добавить всех</button>
+      </div>
+      <div id="user-list" class="user-list show-user__list"></div>
+    </div>
+  </div>
+
+  <script src="async.js"></script>
+</body>
+</html>
