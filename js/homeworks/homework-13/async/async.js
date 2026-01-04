@@ -1,11 +1,11 @@
 let users = undefined;
-
+ 
 const userCardTemp = document.getElementById('user-card-template');
 const containerData = document.getElementById('container-data');
 const containerUsers = document.getElementById('container-users');
 const userList = document.getElementById('user-list');
-const deleteBtnAll = document.getElementById('delete-button-all');
-const addBtnAll = document.getElementById('add-button-all');
+const deleteAllButton = document.getElementById('delete-button-all');
+const addAllButton = document.getElementById('add-button-all');
 
 const changeOfClasses = (value, add, close) => {
   value.classList.add(add);
@@ -57,12 +57,12 @@ const renderUsers = users => {
   });
 }
 
-deleteBtnAll.addEventListener("click", () => {
+deleteAllButton.addEventListener("click", () => {
   localStorage.removeItem("users");
   userList.innerHTML = 'Список пользователей пустой';
 });
 
-addBtnAll.addEventListener("click", async () => {
+addAllButton.addEventListener("click", async () => {
   const response = await fetch("./users.json");
   users = await response.json();
   const saved = localStorage.getItem("users");
