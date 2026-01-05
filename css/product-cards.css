@@ -365,3 +365,10 @@ input::placeholder {
   width: 66px;
   border: 1px solid #FFFFFF;
 }
+
+.button-async {
+  position: absolute;
+  width: 245px;
+  top: 340px;
+  left: 837px;
+}

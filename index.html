@@ -35,21 +35,25 @@
     <input id="data" placeholder="Введите дата рождения" type="date" name="userDate" required>
     <label for="login">Логин:</label>
     <input id="login" placeholder="Введите логин" type="text" name="userLogin" required>
-    <label for="user-passworld">Пароль:</label>
+    <label for="user-password">Пароль:</label>
     <input id="user-password" placeholder="Введите пароль" type="password" name="userPassword" required>
     <label for="user-repeated-password">Подтвердите пароль:</label>
     <input id="user-repeated-password" placeholder="Пароль" type="password" name="userRepeatedPassword" required>
     <button type="submit" class="registration-btn">Зарегистрироваться</button>
   </form>
   
+  <a class="link" href="js/homeworks/homework-13/async/async.html">
+    <button class="button-async button__item">Переход на страницу Async</button>
+  </a>
+
   <div id="modal" class="modal close-modal">
     <div class="modal-showed">
       <form id="authorization-form">
         <h3 class="authorization-form__title">Авторизация</h3>
         <label for="user-login-2">Логин:</label>
-        <input placeholder="Введите логин" type="text" class="user-login-2" name="user-login-2" required>
+        <input placeholder="Введите логин" type="text" id="user-login-2" class="user-login-2" name="user-login-2" required>
         <label for="user-password-2">Пароль:</label>
-        <input placeholder="Введите пароль" type="password" class="user-password-2" name="user-password-2" required>
+        <input placeholder="Введите пароль" type="password" id="user-password-2" class="user-password-2" name="user-password-2" required>
         <button type="submit" class="login-btn" id="login-btn">Войти</button>
         <button id="close-btn" class="close-btn">X</button>
       </form>

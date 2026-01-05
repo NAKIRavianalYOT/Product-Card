@@ -5,3 +5,4 @@ import "./homeworks/homework-7.js";
 import "./homeworks/homework-8.js";
 import "./homeworks/homework-9-10.js";
 import "./homeworks/homework-11.js";
+import "./homeworks/homework-13/async/async.js";

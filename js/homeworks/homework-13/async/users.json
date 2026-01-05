@@ -1,0 +1,62 @@
+[ 
+	{
+		"avatar": "man-in-black",
+		"id": 1,
+		"name": "Алексей",
+		"surname": "Иванов",
+		"email": "ivanov@mail.ru",
+		"age": 30,
+		"city": "Москва",
+		"profession": "Инженер"
+	},
+	{
+		"avatar": "gadgets",
+		"id": 2,
+		"name": "Дмитрий",
+		"surname": "Петров",
+		"email": "petrov@yandex.ru",
+		"age": 25,
+		"city": "Санкт-Петербург",
+		"profession": "Дизайнер"
+	},
+	{
+		"avatar": "sad-picture",
+		"id": 3,
+		"name": "Сергей",
+		"surname": "Сидоров",
+		"email": "sidorov@gmail.com",
+		"age": 40,
+		"city": "Новосибирск",
+		"profession": "Учитель"
+	},
+	{
+		"avatar": "green-tree",
+		"id": 4,
+		"name": "Антон",
+		"surname": "Кузнецов",
+		"email": "kuznetsov@outlook.com",
+		"age": 35,
+		"city": "Екатеринбург",
+		"profession": "Врач"
+	},
+	{
+		"avatar": "view-of-nature-and-gadgets",
+		"id": 5,
+		"name": "Елена",
+		"surname": "Смирнова",
+		"email": "smirnova@list.ru",
+		"age": 28,
+		"city": "Казань",
+		"profession": "Маркетолог"
+	},
+	{
+		"avatar": "white-sweatshirt",
+		"id": 6,
+		"name": "Накир",
+		"surname": "Торшхоев",
+		"email": "nakir3000@gmail.com",
+		"age": 20,
+		"city": "Назрань",
+		"profession": "Frontend Angular-Developer"
+	}
+]
